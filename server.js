@@ -1,5 +1,7 @@
 require('dotenv').config()
-const https = require('https');
+const http = require('http');
 const app = require('./index.js');
-const server = https.createServer(app)
+
+const server = http.createServer(app)
 server.listen(process.env.PORT)
+
